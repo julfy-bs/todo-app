@@ -1,6 +1,6 @@
 <template lang="pug">
-.todoapp
-  todo
+  .todoapp
+    todo
 </template>
 
 <script>
@@ -67,6 +67,7 @@ img {
 label {
   cursor: pointer;
 }
+
 .todoapp {
   background: #fff;
   margin: 130px 0 40px 0;

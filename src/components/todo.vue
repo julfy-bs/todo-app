@@ -1,16 +1,17 @@
 <template lang="pug">
-div
-  header.header
-    todo-heading
-    todo-input(@addTodo="addTodo")
-    todo-list(
-      v-if="todos.length > 0",
-      :todos="todos",
-      @removeTodo="removeTodo",
-      @checkTodo="checkTodo",
-      @filterTodos="filterTodos"
-    )
-  pre {{ todos }}
+  div
+    header.header
+      todo-heading
+      todo-input(@addTodo="addTodo")
+      todo-list(
+        v-if="todos.length > 0",
+        :todos="todos",
+        @removeTodo="removeTodo",
+        @checkTodo="checkTodo",
+        @filterTodos="filterTodos"
+      )
+    pre {{todos}}
+
 </template>
 
 <script>

@@ -1,15 +1,15 @@
 <template lang="pug">
-.todo-item(:class="{ checked: todo.checked }")
-  label.label
-    .input-block 
-      input.input(
-        type="checkbox",
-        @change="checkTodo",
-        :checked="todo.checked"
-      )
-    .title {{ todo.name }}
-  .button
-    button.remove(type="button", @click="removeTodo") x
+  .todo-item(:class="{ checked: todo.checked }")
+    label.label
+      .input-block
+        input.input(
+          type="checkbox",
+          @change="checkTodo",
+          :checked="todo.checked"
+        )
+      .title {{ todo.name }}
+    .button
+      button.remove(type="button", @click="removeTodo") x
 </template>
 
 <script>
@@ -43,6 +43,7 @@ export default {
     }
   }
 }
+
 .checked .title {
   text-decoration: line-through;
 }

@@ -1,9 +1,9 @@
 <template lang="pug">
-div
-  button(
-    type="button", 
-    v-for="filter in filters"
-    @click="filterTodos(filter)"
+  div
+    button(
+      type="button",
+      v-for="filter in filters",
+      @click="filterTodos(filter)"
     ) {{ filter }}
 </template>
 
@@ -16,9 +16,9 @@ export default {
   },
   methods: {
     filterTodos(filter) {
-      this.$emit('filterTodos', filter)
-    }
-  }
+      this.$emit("filterTodos", filter);
+    },
+  },
 };
 </script>
 
